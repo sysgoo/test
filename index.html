@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenar">
+            <div class="asa"></div>
+            <a href="" class="logo">
+                <img src="img/1.png" alt="">
+            </a>
+            <nav>
+                <div class="nan-l " id="navlink">
+                    <i class="fas fa-bars menu" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a class="active" href="#">الرئيسية</a></li>
+                        <li><a href="#">الصيانة</a></li>
+                        <li><a href="#">خدماتنا</a></li>
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">إتصل بنا</a></li>
+                        <li><a href="#">تعليقات</a></li>
+
+                    </ul>
+                </div>
+                <div class="form">
+                    <i class="fas fa-search" onclick="showmenu()"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="landig">
+        <div class="overlay"></div>
+        <div class="aaaa">
+            <div class="aabb"></div>
+            <div class="text">
+                <div class="content">
+                    <h2>مركز إختبار القوة</h2>
+                    <p>مركز إختبار القوة
+                        يقدم لعملائه الكرام خدمات عالية الجودة وعناية فائقة للسيارات لجميع الأنواع من خلال افضل التقنيات
+                        والمعدات وافضل المنهدسين والفنيين المدربين على اعلى مستوى في مجالنا وتشمل خدمتنا : فحص شامل
+                        للسيارات
+                        - وصيانة عضلات السيارات والفرامل وتغير الزيت والكفرات وغيرها ...
+                    </p>
+                </div>
+            </div>
+        </div>
+        <i class="fas fa-angle-left change fa-2px"></i>
+        <i class="fas fa-angle-right change fa-2px"></i>
+        <ul class="bluets">
+            <li></li>
+            </li class="active">
+            </li>
+            <li></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        var navlink = document.getElementById("navlink");
+        function showmenu() {
+            navlink.style.right = "0";
+
+        }
+        function hidemenu() {
+            navlink.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

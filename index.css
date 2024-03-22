@@ -1,0 +1,243 @@
+:root {
+    --maincolor: rgb(152, 29, 29);
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(img/background.jpg );
+    background-size: cover;
+    position: relative;
+
+}
+
+
+ul {
+    list-style: none;
+}
+
+.contenar {
+
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.asa {
+    background-color: rgb(255, 255, 255);
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 1px;
+    z-index: 1000000000000;
+}
+
+header .contenar {
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 30px;
+    padding: 10px;
+}
+
+
+header .logo img {
+    height: 80px;
+    position: relative;
+    left: 30px;
+
+}
+
+header nav {
+    direction: rtl;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 2px #eee;
+
+}
+
+
+nav i img {
+    width: 50px;
+
+}
+
+header nav .menu {
+    color: #eee;
+    font-size: 25px;
+}
+
+
+header nav ul li a {
+    display: block;
+    color: #eee;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+    padding: 10px 10px;
+    position: relative;
+    right: 150px;
+    transition: 1s;
+    font-weight: 800;
+    margin: 5px;
+}
+
+
+header nav ul li a:hover {
+    color: var(--maincolor);
+    border-bottom: 2px solid var(--maincolor);
+    background-color: #eee;
+    border-radius: 20px;
+
+}
+
+.form {
+    width: 30px;
+    height: 30px;
+    background-color: #eee;
+    margin-left: 30px;
+    border-left: 5px var(--maincolor) solid;
+    border-radius: 10px;
+    position: absolute;
+    right: 50px;
+    padding: 6px;
+}
+
+
+/*media qwery*/
+
+@media (min-width : 768px) {
+    header nav .menu {
+
+        display: none;
+    }
+}
+
+header nav ul {
+    display: flex;
+
+}
+
+@media (max-width : 767px) {
+    header nav ul {
+        display: none;
+    }
+
+    header nav .menu:hover+ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 120%;
+        left: 0;
+        width: 120%;
+        background-color: rgb(0, 0, 0 / 50%);
+
+    }
+
+    header nav ul li a {
+        padding: 15px !important;
+    }
+
+}
+
+/*media qwery*/
+
+
+.landig .overlay {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+}
+
+.landig .text {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    padding: 75px 75px 75px 50px;
+    background-color: rgba(193, 3, 3, 0.6);
+    color: #eee;
+    display: flex;
+    justify-content: center;
+}
+
+
+.aaa {
+
+    position: absolute;
+    display: flex;
+}
+
+.aabb {
+
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42%;
+    height: 427px;
+    background-size: cover;
+    background-image: url(img/2.jpg);
+
+
+
+}
+
+@media (max-width : 768px) {
+    .landig .text {
+        width: 100%;
+
+    }
+
+    .aabb {
+        display: none;
+    }
+}
+
+.landig .text .content {
+    direction: rtl;
+    max-width: 500px;
+    text-align: center;
+
+}
+
+.landig .text .content h2 {
+    font-size: 40px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.landig .text .content p {
+    font-size: 20px;
+    line-height: 2;
+}
+
+
+
+.landig .bluets {}
+
+.landig .bluets li {}
+
+.landig .bluets li .active {}
